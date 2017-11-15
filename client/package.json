@@ -1,0 +1,39 @@
+{
+  "name": "ibby",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "axios": "^0.17.0",
+    "classnames": "^2.2.5",
+    "graphhopper-js-api-client": "^0.9.0-3",
+    "immutability-helper": "^2.4.0",
+    "leaflet": "^1.2.0",
+    "lodash": "^4.17.4",
+    "material-ui": "^1.0.0-beta.18",
+    "material-ui-icons": "^1.0.0-beta.15",
+    "react": "^16.0.0",
+    "react-dom": "^16.0.0",
+    "react-leaflet": "^1.7.1",
+    "react-scripts-ts": "2.8.0",
+    "typeface-roboto": "0.0.43"
+  },
+  "scripts": {
+    "start": "react-scripts-ts start",
+    "build": "react-scripts-ts build",
+    "test": "react-scripts-ts test --env=jsdom",
+    "eject": "react-scripts-ts eject"
+  },
+  "devDependencies": {
+    "@types/classnames": "^2.2.3",
+    "@types/immutability-helper": "^2.0.15",
+    "@types/jest": "^21.1.2",
+    "@types/leaflet": "^1.2.0",
+    "@types/lodash": "^4.14.77",
+    "@types/node": "^8.0.34",
+    "@types/react": "^16.0.10",
+    "@types/react-dom": "^16.0.1",
+    "@types/react-leaflet": "^1.1.4",
+    "typescript": "^2.5.2"
+  },
+  "proxy": "http://localhost:3001"
+}

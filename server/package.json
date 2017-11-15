@@ -1,0 +1,76 @@
+{
+  "name": "ibby",
+  "version": "0.1.0",
+  "description": "",
+  "homepage": "",
+  "license": "LGPL-3.0+",
+  "author": {
+    "name": "Cyril MATHEY",
+    "email": "cmathey@live.com"
+  },
+  "main": "build/index.js",
+  "keywords": [
+    "Node",
+    "Express",
+    "Typescript"
+  ],
+  "scripts": {
+    "build": "gulp build",
+    "doc": "gulp generate:doc",
+    "start": "gulp start",
+    "test2": "gulp test",
+    "test": "npm run test:unit && npm run test:integration",
+    "itest": "npm run test:integration",
+    "test:integration": "node ./node_modules/mocha/bin/mocha test/bootstrap.test.ts test/integration/**/*.test.ts",
+    "test:unit": "node ./node_modules/mocha/bin/mocha test/unit/**/*.test.ts",
+    "tslint": "gulp tslint"
+  },
+  "dependencies": {
+    "body-parser": "^1.16.0",
+    "epilogue": "^0.7.1",
+    "express": "^4.14.0",
+    "immutability-helper": "^2.4.0",
+    "morgan": "^1.7.0",
+    "mysql2": "^1.4.2",
+    "nconf": "^0.8.5",
+    "reflect-metadata": "^0.1.10",
+    "sequelize": "^4.19.0",
+    "sequelize-typescript": "^0.5.0",
+    "sqlite3": "^3.1.13",
+    "winston": "^2.3.1"
+  },
+  "devDependencies": {
+    "@types/body-parser": "^1.16.7",
+    "@types/chai": "^4.0.4",
+    "@types/chai-as-promised": "^7.1.0",
+    "@types/express": "^4.0.35",
+    "@types/immutability-helper": "^2.0.15",
+    "@types/mocha": "^2.2.38",
+    "@types/morgan": "^1.7.32",
+    "@types/nconf": "^0.0.34",
+    "@types/sinon": "^2.3.7",
+    "@types/winston": "^2.2.0",
+    "chai": "^4.1.2",
+    "chai-as-promised": "^7.1.1",
+    "gulp": "^3.9.1",
+    "gulp-istanbul": "^1.1.1",
+    "gulp-mocha": "^4.3.1",
+    "gulp-nodemon": "^2.2.1",
+    "gulp-plumber": "^1.1.0",
+    "gulp-sourcemaps": "^2.4.0",
+    "gulp-tslint": "^8.1.2",
+    "gulp-typedoc": "^2.0.2",
+    "gulp-typescript": "^3.1.4",
+    "remap-istanbul": "^0.9.5",
+    "rimraf": "^2.5.4",
+    "run-sequence": "^2.2.0",
+    "sinon": "^4.0.2",
+    "ts-node": "^3.3.0",
+    "tslint": "^5.8.0",
+    "typedoc": "^0.9.0",
+    "typescript": "^2.5.2"
+  },
+  "engines": {
+    "node": ">=4.0.0"
+  }
+}

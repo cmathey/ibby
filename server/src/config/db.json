@@ -1,0 +1,31 @@
+{
+  "development": {
+    "database": "ibby",
+    "name": "ibby",
+    "dialect": "sqlite",
+    "host": "localhost",
+    "storage": "./development.sqlite",
+    "sync": {
+      "force": true,
+      "alter": true
+    }
+  },
+  "test": {
+    "database": "ibby",
+    "name": "ibby",
+    "dialect": "mysql",
+    "host": "localhost",
+    "username": "root",
+    "password": "root",
+    "sync": {
+      "alter": false
+    }
+  },
+  "production": {
+    "username": "root",
+    "password": null,
+    "database": "database_production",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  }
+}
