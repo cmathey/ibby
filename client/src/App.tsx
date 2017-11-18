@@ -14,7 +14,10 @@ import ChevronLeftIcon from 'material-ui-icons/ChevronLeft';
 
 import {styles} from './App.styles';
 import withStyles from 'material-ui/styles/withStyles';
-import LogisticMap from './components/LogisticMap';
+// import LogisticMap from './components/LogisticMap';
+import LayoutTest from './components/LayoutTest';
+import LayoutTestResponsive from './components/LayoutTestResponsive';
+import {ShowcaseLayout} from './components/LayoutShowcase';
 
 interface AppState {
   drawerOpened: boolean;
@@ -88,7 +91,8 @@ class App extends React.Component<any, AppState> {
               </Drawer>
             </MuiThemeProvider>
             <main className={classNames(classes.content, this.state.drawerOpened && classes.contentShift)}>
-              <LogisticMap/>
+              <ShowcaseLayout/>
+              {/*<LayoutTest layout={{cols: 12, autoSize: true}}/>*/}
               {/*<Switch>*/}
               {/*<Route exact path={DASH_PATH} component={DashView}/>*/}
               {/*<Route exact path={SETUP_PATH} component={SetupView}/>*/}
@@ -96,6 +100,8 @@ class App extends React.Component<any, AppState> {
               {/*<Route component={NoMatch}/>*/}
               {/*</Switch>*/}
             </main>
+            <Divider/>
+            <LayoutTestResponsive/>
           </div>
         </div>
       </MuiThemeProvider>
