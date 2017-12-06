@@ -18,6 +18,7 @@ import withStyles from 'material-ui/styles/withStyles';
 import LayoutTest from './components/LayoutTest';
 import LayoutTestResponsive from './components/LayoutTestResponsive';
 import {ShowcaseLayout} from './components/LayoutShowcase';
+import Selector from './components/Selector';
 
 interface AppState {
   drawerOpened: boolean;
@@ -58,6 +59,10 @@ class App extends React.Component<any, AppState> {
                 <Typography type="title" color="inherit" noWrap>
                   Accuracy Logistic
                 </Typography>
+                <div className='toolbar-test'>
+                  <Selector onSelected={(e) => {console.log(e)}}/>
+                  <Selector onSelected={(e) => {console.log(e)}}/>
+                </div>
               </Toolbar>
             </AppBar>
             <MuiThemeProvider theme={darkTheme}>

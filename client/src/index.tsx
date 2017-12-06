@@ -7,6 +7,7 @@ import './index.css';
 
 import 'react-grid-layout/css/styles.css';
 import 'react-resizable/css/styles.css';
+import 'react-select-plus/dist/react-select-plus.css';
 
 ReactDOM.render(
   <App/>,

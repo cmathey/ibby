@@ -1,0 +1,33 @@
+/*.Select-input {*/
+  /*position: absolute;*/
+  /*top: 0*/
+/*}*/
+/*.Select-value-label {*/
+  /*display: block;*/
+/*}*/
+/*.Select-value {*/
+  /*position: relative;*/
+  /*white-space: normal;*/
+/*}*/
+
+.select2 .Select-value-label {
+  /*color: green !important;*/
+}
+
+.select2 .Select-control {
+  border-radius: 0;
+  font-size: 14px;
+}
+
+.select2 .Select-option-group-label {
+  /*font-size: 12px;*/
+}
+
+.select2 .Select-option-group {
+  /*padding: 8px 10px;*/
+}
+.select2 .Select-option {
+  /*font-size: 12px;*/
+  padding: 6px 10px;
+  /*color: green !important;*/
+}
